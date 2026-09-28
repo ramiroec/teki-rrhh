@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Estilos de impresión profesionales para Recibos de Salario */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #recibo-imprimible, #recibo-imprimible * {
+    visibility: visible;
+  }
+  #recibo-imprimible {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white;
+    color: black;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .no-imprimir {
+    display: none !important;
+  }
+}

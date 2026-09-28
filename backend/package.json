@@ -1,0 +1,36 @@
+{
+  "name": "teki-rrhh-backend",
+  "version": "1.0.0",
+  "description": "Backend API REST SaaS de RRHH para TEKI",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:migrar": "tsx src/db/migrar.ts",
+    "db:semillar": "tsx src/db/semillas/ejecutar.ts",
+    "db:setup": "tsx src/db/migrar.ts && tsx src/db/semillas/ejecutar.ts"
+  },
+  "keywords": ["rrhh", "saas", "teki"],
+  "author": "TEKI",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.17.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.10.1",
+    "@types/pg": "^8.16.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
