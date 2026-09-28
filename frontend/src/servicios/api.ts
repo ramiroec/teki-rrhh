@@ -1,4 +1,5 @@
-const API_BASE = '/api';
+//const API_BASE = '/api';
+const API_BASE = 'https://vps-aff6ee56.vps.ovh.ca/rrhh1-api/api';
 
 interface OpcionesPeticion extends RequestInit {
   parametros?: Record<string, any>;
