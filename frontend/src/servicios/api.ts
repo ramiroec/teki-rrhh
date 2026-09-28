@@ -1,5 +1,5 @@
 //const API_BASE = '/api';
-const API_BASE = 'https://vps-aff6ee56.vps.ovh.ca/rrhh1-api/api';
+const API_BASE = 'https://vps-aff6ee56.vps.ovh.ca/rrhh1-api';
 //prueba de comentario2
 
 interface OpcionesPeticion extends RequestInit {
